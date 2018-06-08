@@ -1,0 +1,38 @@
+{
+  "name": "igdm-web",
+  "version": "0.1.0",
+  "description": "Instagram DMs for web",
+  "author": "Solomon Ayoola <ayool.solomon89@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoola-solomon/igdm-web.git"
+  },
+  "keywords": ["Instagram", "messaging", "Chat", "DM", "Social Media"],
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.3",
+    "prettier": "^1.13.5",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.3.2"
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.2"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write", "eslint --fix", "git add"]
+  },
+  "pre-commit": "lint:staged"
+}

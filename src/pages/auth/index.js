@@ -15,7 +15,7 @@ class Auth extends Component {
     if (this.props.isLoggedIn) {
       return <Redirect to="/" />;
     }
-    return null;
+    return <Redirect to="/login" />;
   }
 }
 
